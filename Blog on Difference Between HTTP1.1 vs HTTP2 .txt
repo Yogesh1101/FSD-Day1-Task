@@ -1,0 +1,22 @@
+Blog on Difference Between HTTP1.1 vs HTTP2:
+
+Mainly, HTTP stands for HyperText Transfer Protocol and it is used in client-server communication. By using HTTP user can send the request to the server and the server will send the response to the user. There are several stages of development of HTTP, HTTP1.1 which was created in 1997 and the new one is HTTP2 which was created in 2015.
+
+1. Multiplexing:
+
+One of the most prominent enhancements introduced in HTTP/2 is multiplexing. In HTTP/1.1, only one request can be sent over a single TCP connection at a time, leading to a phenomenon called "head-of-line blocking". HTTP/2 addresses this limitation by enabling multiple requests and responses to be sent and received concurrently over a single connection, thus significantly improving efficiency and reducing latency.
+
+2. Server Push:
+
+HTTP/2 introduces the concept of server push, which allows servers to proactively send resources to clients without explicit requests. In HTTP/1.1, clients need to parse the received HTML, discover the dependencies (e.g., CSS, JavaScript files), and make subsequent requests for each resource. With server push, the server can identify these dependencies and push them to the client, eliminating the need for additional round trips, reducing latency, and improving page load times.
+
+3. Header Compression:
+
+HTTP/1.1 sends headers as plain text with each request and response, which can lead to increased overhead, especially when dealing with large requests or responses. HTTP/2 addresses this issue by introducing header compression techniques. Headers are now encoded using a binary format called HPACK, which reduces their size on the wire, resulting in improved network utilization and reduced bandwidth consumption.
+
+4. Enhanced Security:
+
+While both HTTP/1.1 and HTTP/2 can be used with or without encryption (HTTP and HTTPS, respectively), HTTP/2 encourages the use of encryption by making it a requirement for most modern browsers. Encrypted communication with HTTP/2 is achieved through Transport Layer Security (TLS), providing an additional layer of security and protecting data integrity.
+
+
+In conclusion, the transition from HTTP/1.1 to HTTP/2 represents a significant step forward in the evolution of the web. Embracing the advancements of HTTP
