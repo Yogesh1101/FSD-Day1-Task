@@ -1,0 +1,27 @@
+Blog on Objects and Its Internal Representation in JavaScript:
+
+In JavaScript, objects are fundamental entities that allow developers to represent and manipulate complex data structures. Understanding how objects are internally represented and how they behave is crucial for writing efficient and effective JavaScript code. In this blog, we will see the objects and its internal representation in JavaScript.
+
+1. Objects: The Building Blocks of JavaScript:
+
+In JavaScript, objects are key-value pairs used to represent data and define complex structures. They are created using object literals, constructor functions, or the class syntax introduced in ES6. Objects can store various types of values, including primitive types, and even other objects. It can simple define the property and values inside curly braces. 
+
+let person = {firstName: 'Yogesh', lastName: 'Kumar', age: 21};
+
+2. Properties and Methods:
+
+Properties are the characteristic or attributes of an object. They are represented by key-value pairs, where the key is a string and the value can be any type. Properties can be accessed and modified using simple dot-notation (objectName.propertyName).
+Methods are functions that are associated with objects. They can be defined within the objects body or added dynamically to the objects. Methods allow objects to exhibit behaviour and perform actions.
+
+3. Object Representation: Objects and References:
+
+In JavaScript, objects are reference types. When an objects is assigned to a variable or passed as an argument to a function, the variable ot parameter holds a reference to the objects location in memory rather than the object itself, leading to shared state and potential side effects.
+
+4. Creating a JavaScript Objects:
+
+With JavaScript, we can define and create our own objects. There are different ways to create our own objects.
+
+Create a single objects, using an object literal.
+Create a single objects, with the keyword new.
+Create an object using Object.create().
+Define an object constructor, and then create objects of the constructed types.
